@@ -315,7 +315,14 @@ for(let i=1;i<6;i++){
 *****
 */
 console.log("Exercice 21");
-// TODO
+let starExo21="*";
+let spaceExo21=" "+" "+" "+" ";
+
+for(let i=0;i<6;i++){
+    console.log(spaceExo21+starExo21);
+    spaceExo21-=" ";
+    starExo21+="**";
+}
 
 // Exercice 22 : afficher dans la console :
 /*
