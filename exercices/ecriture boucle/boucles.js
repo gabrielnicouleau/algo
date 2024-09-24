@@ -60,7 +60,7 @@ for(let i=0;i<3;i++){
 // 8
 // 9
 console.log("Exercice 4");
-for(let i=0;i<=9;i++){
+for(let i=0;i<10;i++){
     console.log(i);
 }
 
@@ -257,14 +257,13 @@ console.log(compteurExo16);
 // Exercice 17 : trouver le nombre n tel que 1+2+3+4+5+...+(n-1)+n = 302253
 console.log("Exercice 17");
 let resultExo17=0;
-let compteurExo17=0;
+let n=0;
 while(resultExo17<302253){
-    let n=compteurExo17;
-    resultExo17+=compteurExo17;
+    resultExo17+=n;
     if(resultExo17==302253){
         console.log("n=", n);
     }
-    compteurExo17++
+    n++
 }
 
 // Exercice 18 : Afficher :
@@ -279,7 +278,13 @@ while(resultExo17<302253){
 // 34
 // 55
 console.log("Exercice 18");
-// TODO
+let exo18A=0;
+let exo18B=1;
+for (let i=1;i<11;i++){
+    exo18A+=exo18B;
+    exo18B=exo18A-exo18B
+    console.log(exo18A);
+}
 
 // Exercice 19 : compter combien il y a de nombres multiples de 3 ou de 7 entre 1234 et 5678
 console.log("Exercice 19");
@@ -316,13 +321,25 @@ for(let i=1;i<6;i++){
 */
 console.log("Exercice 21");
 let starExo21="*";
-let spaceExo21=" "+" "+" "+" ";
+let spaceExo21="a";
 
-for(let i=0;i<6;i++){
+for(let i=0;i<5;i++){
+    if(i=1){
+        spaceExo21="b"
+    }
+    if(i=2){
+        spaceExo21="C"
+    }
+    if(i=3){
+        spaceExo21="D"
+    }
+    if(i=4){
+        spaceExo21="E"
+    }
     console.log(spaceExo21+starExo21);
-    spaceExo21-=" ";
-    starExo21+="**";
+    starExo21+="*";
 }
+
 
 // Exercice 22 : afficher dans la console :
 /*
